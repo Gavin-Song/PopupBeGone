@@ -10,7 +10,7 @@ There is also a whitelist so you can add sites you don't want to block popups on
 
 ## Installation and other info
 
-[Click here to install for chrome!](https://chrome.google.com/webstore/detail/ndbfglcbdckpoapnkolfekbbdfpcdblj)
+[Click here to install for chrome!](https://chrome.google.com/webstore/detail/popupbegone/ndbfglcbdckpoapnkolfekbbdfpcdblj)
 
 ## Bug Reports and suggestions
 
