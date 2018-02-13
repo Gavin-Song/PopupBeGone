@@ -1,0 +1,252 @@
+/*Load in the custom font*/
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+
+body{
+	font-family: "Roboto", sans-serif;
+	width: 250px;
+	height: 360px; /*400px*/
+	font-size: 13px;
+}
+
+a{
+	text-decoration: none;
+}
+
+h2{
+	display: inline;
+	font-size: 24px;
+	margin-left: 20px;
+}
+
+.logo_title{
+	height: 28px;
+	width: auto;
+	margin-left: 20px;
+}
+
+.setting_button{
+	position: absolute;
+	right: 10px;
+	top: -7px;
+	outline:none;
+
+	background: transparent;
+    border: none !important;
+	font-size: 24px;
+}
+.back_button{
+	float: left;
+	outline:none;
+
+	background: transparent;
+    border: none !important;
+	font-size: 16px;
+	margin: 5px;
+}
+
+hr{
+	border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+
+.title{
+	background-color: #333;
+	color: white;
+	padding: 5px;
+	padding-left: 15px;
+	margin: 3px;
+}
+
+select{
+	width: 100%;
+	font-family: "Roboto", sans-serif;
+	padding: 3px;
+}
+
+button{
+	font-family: "Roboto", sans-serif;
+}
+
+textarea{
+	width: calc(100% - 15px);
+	height: 100px;
+	margin: 5px;
+	resize: none;
+}
+
+
+.wide_button, .button{
+	background-color: #333;
+	color: #eee;
+	border: none;
+
+	padding: 8px;
+	margin: 0px;
+	transition: background-color 0.2s;
+}
+.wide_button{
+	width: 100%;
+	padding: 5px;
+	padding-left: 15px;
+	text-align: left;
+}
+
+.wide_button:hover, .button:hover{
+	cursor: pointer;
+	background-color: #494949;
+	transition: background-color 0.2s;
+}
+
+.white_button_theme{
+	background-color: white;
+	color: #333;
+}
+
+.white_button_theme:hover{
+	color: black;
+	background-color: #eee;
+}
+
+.bottom_button{
+	background-color: white;
+	padding: 6px;
+	float: left;
+	transition: filter 0.2s;
+	width: 23%;
+	text-align: center;
+}
+
+.bottom_button:hover{
+	cursor: pointer;
+	filter: brightness(1.1);
+	transition: filter 0.2s;
+}
+
+.donate_button{
+	border: 1px solid #FFAB00;
+	color: #FFAB00;
+}
+
+.website_button{
+	border: 1px solid #0091EA;
+	color: #0091EA;
+}
+
+.share_button{
+	border: 1px solid #00BFA5;
+	color: #00BFA5;
+}
+
+
+.extra_margin{ margin: 5px; }
+
+
+
+.control {
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 3px;
+    padding-top: 3px;
+    cursor: pointer;
+}
+.control input {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+}
+.control_indicator {
+    position: absolute;
+    top: 4px;
+    left: 10px;
+    height: 14px;
+    width: 14px;
+    background: #e6e6e6;
+    border: 0px solid #000000;
+}
+.control-radio .control_indicator {
+    border-radius: undefined%;
+}
+
+.control:hover input ~ .control_indicator,
+.control input:focus ~ .control_indicator {
+    background: #cccccc;
+}
+
+.control input:checked ~ .control_indicator {
+    background: #2aa1c0;
+}
+.control:hover input:not([disabled]):checked ~ .control_indicator,
+.control input:checked:focus ~ .control_indicator {
+    background: #0e6647d;
+}
+.control input:disabled ~ .control_indicator {
+    background: #e6e6e6;
+    opacity: 0.6;
+    pointer-events: none;
+}
+.control_indicator:after {
+    box-sizing: unset;
+    content: '';
+    position: absolute;
+    display: none;
+}
+.control input:checked ~ .control_indicator:after {
+    display: block;
+}
+.control-checkbox .control_indicator:after {
+    left: 5px;
+    top: 1px;
+    width: 3px;
+    height: 8px;
+    border: solid #ffffff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+.control-checkbox input:disabled ~ .control_indicator:after {
+    border-color: #7b7b7b;
+}
+
+
+#onoff{
+	background-color: #333;
+    border: none;
+    color: white;
+    padding: 7px 16px;
+    text-align: center;
+    text-decoration: none;
+    /*display: inline-block;*/
+    font-size: 14px;
+	transition: 1s;
+	outline: none;
+
+	/*width: 100%;
+	height: 100px;*/
+	width: calc(100% - 10px);
+	height: 50px;
+
+	margin: 5px;
+	position: relative;
+}
+
+#onoff:hover{ cursor: pointer; }
+
+
+
+#settings_div{
+	left: 270px;
+	top: 0px;
+	position: absolute;
+	width: 100%;
+	transition: 0.2s;
+}
+
+#main_div{
+	position: absolute;
+	left: 0px;
+	width: 100%;
+	transition: 0.2s;
+}

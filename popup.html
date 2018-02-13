@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html>
+	<link rel="stylesheet" type="text/css" href="css/popup.css">
+	<body>
+		<!-- The left "section" -->
+		<div id="main_div">
+			<img src="img/logo_title.png" class="logo_title">
+			<button id="settings_button" class="setting_button">&#9776;</button>
+			<br><hr>
+			<p class="title">Enable/Disable Extension</p>
+
+			<button id="onoff">ON</button>
+
+			<br>
+			<p class="title">Options</p>
+
+			<button class="wide_button white_button_theme" id="whitelist_page">Whitelist on this page</button>
+			<button class="wide_button white_button_theme" id="whitelist_domain">Whitelist on this domain</button>
+
+			<br><hr>
+			<label class="control control-checkbox">
+				<input id="fast_mode" type="checkbox" value="Use Fast Mode"
+					title="Very fast, but slightly inaccurate popup detection">
+				Use Fast Mode<br>
+				<div class="control_indicator"></div>
+			</label>
+
+			<!-- When to run the extension? dropdown --->
+			<br>
+			<label class="extra_margin">Remove popups:</label>
+			<div style='margin:5px'>
+				<select id="run_at">
+					<option value="load_1" selected="selected">On page load</option>
+					<option value="load_2">1 Second after load</option>
+					<option value="load_3">3 Seconds after load</option>
+					<option value="load_4">5 Seconds after load</option>
+					<option value="load_5">10 Seconds after load</option>
+				</select>
+			</div>
+
+			<!-- Donate button. Pls donate -->
+			<hr>
+			<a class="bottom_button donate_button extra_margin" href="https://paypal.me/GavinSong">&#x2665; Donate</a>
+			<a class="bottom_button website_button extra_margin" href="https://github.com/Gavin-Song/PopupBeGone">Github</a>
+			<a class="bottom_button share_button extra_margin" href="https://gavin-song.github.io/apps.html">More</a>
+
+		</div>
+
+		<!-- The right section -->
+		<div id="settings_div">
+			<button id="back_button" class="back_button">&#x25c0; Back</button>
+			<br><br>
+
+			<p class="title">Whitelisted Pages</p>
+			<textarea id="whitelisted_pages_textarea" wrap="off" readonly></textarea>
+
+			<p class="title">Whitelisted Domains</p>
+			<textarea id="whitelisted_domains_textarea" wrap="off" readonly></textarea>
+
+			<button id="reset_settings" class="button extra_margin" style='width: calc(100% - 10px)'>Reset Settings</button>
+		</div>
+
+		<script type="text/javascript" src="js/popup.js"></script>
+	</body>
+</html>
